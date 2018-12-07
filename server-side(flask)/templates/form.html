@@ -1,0 +1,55 @@
+
+{% extends "layout.html" %}
+
+{% block heading %}
+  Crop You Should Choose
+{% endblock %}
+
+{% block body %}
+
+  <h1 style = "text-align: center;">You give us the parameters, we give you a suitable crop.</h1>
+  <h2 style = "text-align: center;">It's that easy!<h2><br>
+  {% for message in form.moisture.errors %}
+    <div> {{ message }} </div>
+  {% endfor %}
+  {% for message in form.temperature.errors %}
+    <div> {{ message }} </div>
+  {% endfor %}
+  {% for message in form.humidity.errors %}
+    <div> {{ message }} </div>
+  {% endfor %}
+
+
+
+  <form action ="{{ url_for('home') }}" method=post role="form" >
+      {{form.csrf}}
+      <legend style="text-align: center;"> Try IT</legend><br>
+      {{ form.hidden_tag() }}
+
+      <div class = container>
+      <div class="text-center">
+      <div class = "form-group"  style="text-align: center;" >
+        <label for="moisture">Moisture
+        <input type="number" class="form-control" id="moisture" name="moisture" value={{ moisture_ob }}></label>
+        <label for="temperature">Temperature
+        <input type="number" class="form-control" id="temperature" name="temperature" value={{ temperature_ob }}></label>
+        <label for="humidity">Humidity
+        <input type="number" class="form-control" id="humidity" name="humidity" value={{ humidity_ob }}></label>
+        <!--{{ form.moisture.label }} {{ form.moisture }} <br>
+        {{ form.temperature.label }} {{ form.temperature }} <br>
+        {{ form.humidity.label }} {{ form.humidity }} <br>-->
+      </div>
+      </div>
+      </div>
+      <div class="text-center">
+        <button type="submit" class="btn btn-success" >Submit</button>
+      </div>
+
+  </form>
+  
+	<form action ="{{ url_for('ready') }}" method=post role ="form">
+		<button type="Use NodeMCU" class="btn btn-success"> Use NodeMCU </button>
+	</form>
+	
+	
+{% endblock %}

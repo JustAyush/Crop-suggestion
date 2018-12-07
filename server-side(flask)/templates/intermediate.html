@@ -1,0 +1,10 @@
+{% extends "layout.html" %}
+
+{% block heading %}
+  The sensors have taken the data. Let's go back.
+{% endblock %}
+{% block body %}
+	<form action ="{{ url_for('home') }}" method=get role ="form">
+		<button type="Use NodeMCU" class="btn btn-success"> Go back </button>
+	</form>
+{% endblock %}

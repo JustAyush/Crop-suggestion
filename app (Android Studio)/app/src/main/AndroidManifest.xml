@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="np.com.anilpaudel.agro">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyCL7-C2rkSttlgGKPI7A_TvlUEBOepH2tg" />
+
+        <activity
+            android:name=".SplashActivity"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".SecondActivity" />
+        <activity android:name=".crops" />
+        <activity android:name=".agro" />
+        <activity android:name=".add_product" />
+        <activity android:name=".my_activity" />
+        <activity android:name=".readings" />
+        <activity android:name=".message" />
+        <activity android:name=".notifications" />
+        <activity android:name=".market_prices" />
+        <activity android:name=".market_analysis" />
+        <activity android:name=".request_product" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".login" />
+        <activity android:name=".display_crops" />
+        <activity android:name=".sign_up" />
+        <activity android:name=".about"></activity>
+    </application>
+
+</manifest>

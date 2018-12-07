@@ -1,0 +1,34 @@
+<?php
+$sql="SELECT * FROM agro_table 	WHERE contact_no='$contact_no' ";
+	$result=$conn->query($sql);
+	if($result->num_rows>0)
+	{	
+	while($row=$result->fetch_assoc())
+	{
+$id=$row['id'];
+$occupation=$row['occupation'];
+$full_name=$row['full_name'];
+$email=$row['email'];
+$address=$row['address'];
+$address_name=$row['address_name'];
+$address_latitude=$row['address_latitude'];
+$address_longitude=$row['address_longitude'];
+$contact_no=$row['contact_no'];
+$age=$row['age'];
+$gender=$row['gender'];
+$acc_timestamp=$row['acc_timestamp'];
+$credit_point=$row['credit_point'];
+$verify_token=$row['verify_token'];
+$request_count=$row['request_count'];
+$response_count=$row['response_count'];
+$login_token=$row['login_token'];
+$return_data=array(
+'id'=>$id,'occupation'=>$occupation,'full_name'=>$full_name,'email'=>$email,'address'=>$address,'address_name'=>$address_name,
+'address_latitude'=>$address_latitude,'address_longitude'=>$address_longitude,'contact_no'=>$contact_no,'age'=>$age,'gender'=>$gender,
+'acc_timestamp'=>$acc_timestamp,'credit_point'=>$credit_point,'verify_token'=>$verify_token,'request_count'=>$request_count,
+'response_count'=>$response_count,'login_token'=>$login_token,'error_code'=>'0','password'=>$password,'comment'=>$comment);
+print(json_encode($return_data));
+	break;
+	}
+}
+?>

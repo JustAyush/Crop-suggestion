@@ -1,0 +1,78 @@
+<resources>
+    <string name="app_name">agro</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+    <string name="server_ip">http://192.168.0.7/agro/</string>
+    <string name="flask_ip">http://192.168.0.1</string>
+    <string name="node_mcu_ip">http://192.168.0.1</string>
+    <string-array name="gender">
+        <item>Male</item>
+        <item>Female</item>
+        <item>Other</item>
+    </string-array>
+    <string-array name="teams">
+        <item>India</item>
+        <item>South Africa</item>
+        <item>Australia</item>
+        <item>England</item>
+        <item>New Zealand</item>
+        <item>Sri Lanka</item>
+        <item>Pakistan</item>
+        <item>West Indies</item>
+        <item>Bangladesh</item>
+        <item>Ireland</item>
+    </string-array>
+
+    <string-array name="temp">
+        <item>40</item>
+        <item>50</item>
+        <item>60</item>
+        <item>70</item>
+        <item>80</item>
+    </string-array>
+
+    <string-array name="humidity">
+        <item>25</item>
+        <item>50</item>
+        <item>75</item>
+        <item>100</item>
+    </string-array>
+
+    <string-array name="moisture">
+        <item>50</item>
+        <item>60</item>
+        <item>70</item>
+    </string-array>
+
+    <string-array name="navigation_drawer_items_array">
+        <item>Connect</item>
+        <item>Fixtures</item>
+        <item>Table</item>
+    </string-array>
+
+    <string-array name="category_product">
+        <item>crops</item>
+        <item>fruits</item>
+        <item>vegetable</item>
+        <item>others</item>
+    </string-array>
+
+    <string-array name="quantity">
+        <item>kg</item>
+        <item>ton</item>
+        <item>quintal</item>
+        <item>pau</item>
+        <item>dharni</item>
+    </string-array>
+
+    <string-array name="unit">
+        <item>/total</item>
+        <item>/kg</item>
+        <item>/ton</item>
+        <item>/quintal</item>
+        <item>/pau</item>
+        <item>/dharni</item>
+    </string-array>
+</resources>
